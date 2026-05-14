@@ -14,7 +14,7 @@ app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 # COLE A SUA SENHA REAL NO LUGAR DE SUA_SENHA_AQUI
-DB_URL = "postgresql://postgres:F%40ntasyWmnnwlhtscuclh%402026@db.uxwanmswcnamvsqjqgyu.supabase.co:5432/postgres"
+DB_URL = "postgresql://postgres.uxwanmswcnamvsqjqgyu:F%40ntasyWmnnwlhtscuclh%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
 
 def get_db():
     return psycopg2.connect(DB_URL, cursor_factory=RealDictCursor)
