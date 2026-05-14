@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-oracledb
+psycopg2-binary
 bcrypt
 pandas
 openpyxl
